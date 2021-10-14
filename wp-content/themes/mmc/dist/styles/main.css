@@ -7631,19 +7631,28 @@ header .container {
 
 @media (max-width: 700px) {
     header .container {
-        min-height: 70px
+        min-height: 170px
     }
 }
 
 header .container.fixed {
     position: fixed;
     background: #399;
-    top: 0
+    top: 0;
+    height: 150px;
 }
 
 header .container.fixed .brand {
     height: 95px;
     margin-bottom: 10px
+}
+
+
+
+@media (max-width: 1000px) {
+    header .container.fixed {
+        height: 200px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -7652,6 +7661,12 @@ header .container.fixed .brand {
         width: 100%;
         background: #399
     }
+    footer .col-md-9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -7784,7 +7799,6 @@ header .container.visible {
 }
 
 header .container img {
-    margin-bottom: 40px;
     transform: translateY(20px);
 }
 
